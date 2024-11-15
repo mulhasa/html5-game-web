@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperPlay Game</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-XXXXXXXXXXXXX",
+        enable_page_level_ads: true
+      });
+    </script>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+        }
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #121212;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .navbar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #1e1e1e;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .search-bar input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            margin-left: 5px;
+            font-size: 1em;
+        }
+        .search-bar input::placeholder {
+            color: #888;
+        }
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .search-bar {
+                margin-top: 10px;
+            }
+        }
+        /* Genre Section */
+        .genres {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .genres button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #1e1e1e;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .genres button:hover {
+            background-color: #333;
+        }
+        /* Game Grid */
+        .game-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .game-card {
+            position: relative;
+            margin: 15px;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .game-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .game-card:hover img {
+            transform: scale(1.1);
+        }
+        .game-card .title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .game-card:hover .title {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://via.placeholder.com/40" alt="Logo">
+            SuperPlay
+        </div>
+        <div class="search-bar">
+            <i>🔍</i>
+            <input type="text" placeholder="Search ..">
+        </div>
+    </div>
+
+    <!-- Anchor Ad -->
+    <div class="ad-anchor">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-XXXXXXXXXXXXX"
+            data-ad-slot="1234567890"
+            data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Genres Section -->
+    <div class="genres">
+        <button>Action</button>
+        <button>Adventure</button>
+        <button>RPG</button>
+        <button>Sports</button>
+        <button>Puzzle</button>
+    </div>
+
+     <!-- Banner Ad -->
+     <div class="ad-banner">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-XXXXXXXXXXXXX"
+            data-ad-slot="1234567890"
+            data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Game Grid -->
+    <div class="game-grid">
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Game 1">
+            <div class="title">Game 1</div>
+        </div>
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Game 2">
+            <div class="title">Game 2</div>
+        </div>
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Game 3">
+            <div class="title">Game 3</div>
+        </div>
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200" alt="Game 4">
+            <div class="title">Game 4</div>
+        </div>
+    </div>
+
+</body>
+</html>
